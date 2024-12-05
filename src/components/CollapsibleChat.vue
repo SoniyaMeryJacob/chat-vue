@@ -70,15 +70,15 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 20px;
+  padding: 10px;
   z-index: 1000;
 }
 
 /* Chat Tabs Container */
 .chat-tabs {
   display: flex;
-  flex-direction: column; /* Make tabs vertical */
-  gap: 10px; /* Add spacing between tabs */
+  flex-direction: column;
+  gap: 10px; /* Spacing between tabs */
 }
 
 /* Individual Chat Button */
@@ -130,16 +130,30 @@ export default {
   transform: translateX(100%);
 }
 
-/* Responsive Design */
+/* Responsive Design for Tablets and Phones */
 @media screen and (max-width: 768px) {
   .chat-panel {
-    width: 90%; /* Adjust width for smaller screens */
-    height: 400px; /* Reduce height */
+    width: 90%; /* Use 90% width on smaller screens */
+    height: 50vh; /* Adjust height */
+    bottom: 90px; /* Leave space for chat tabs */
   }
 
   .chat-tab {
     font-size: 12px; /* Smaller text size */
     padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chat-panel {
+    width: 100%; /* Full width for very small screens */
+    height: 50vh;
+    bottom: 100px;
+  }
+
+  .chat-tab {
+    font-size: 10px;
+    padding: 5px 10px;
   }
 }
 </style>
