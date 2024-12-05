@@ -1,0 +1,68 @@
+:root {
+    --primary-bg: #3E5159;
+    --primary-accent: #F27405;
+    --secondary-accent: #F25C05;
+    --bubble-bg: #F2B591;
+    --light-bg: #F2F2F2;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg);
+  }
+  
+  .chat-container {
+    background-color: var(--primary-bg);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .chat-header {
+    background-color: var(--primary-bg);
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .chat-messages {
+    background-color: var(--light-bg);
+    padding: 15px;
+    border-radius: 8px;
+    height: 400px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .message.user {
+    background-color: var(--primary-accent);
+    color: white;
+    text-align: right;
+  }
+  
+  .message.bot {
+    background-color: var(--bubble-bg);
+    color: black;
+  }
+  
+  .button {
+    background-color: var(--primary-accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-accent);
+  }
+  
